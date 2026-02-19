@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ArchaeoVision 360</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Tikal_Temple_I.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0, 40, 0, 0.75);
+    min-height: 100vh;
+}
+
+/* MENÚ */
+nav {
+    background-color: rgba(0,0,0,0.8);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #90ee90;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* CONTENIDO */
+.container {
+    text-align: center;
+    padding: 40px;
+    animation: fadeIn 2s ease-in;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.links {
+    background-color: rgba(0,0,0,0.6);
+    display: inline-block;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.links a {
+    display: block;
+    color: #90ee90;
+    margin: 12px 0;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: yellow;
+    transform: scale(1.05);
+}
+
+/* SÍMBOLOS MAYAS DECORATIVOS */
+.maya-left, .maya-right {
+    position: fixed;
+    top: 50%;
+    font-size: 60px;
+    opacity: 0.3;
+}
+
+.maya-left {
+    left: 10px;
+}
+
+.maya-right {
+    right: 10px;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Videos 360</a>
+    <a href="#">Explorar</a>
+</nav>
+
+<div class="container">
+    <h1>ArchaeoVision 360</h1>
+    <h2>Links de videos 360 de arqueología en Youtube</h2>
+
+    <div class="links">
+        <a href="https://youtu.be/VNsgC2Jsza8?si=ELsS0TbsNyTTAggB" target="_blank">Video 360 - Arqueología 1</a>
+        <a href="https://youtu.be/VA2elnKhO88?si=JXo5gju9AeT0j54z" target="_blank">Video 360 - Arqueología 2</a>
+        <a href="https://youtu.be/v3bDMldpaLs?si=uDpK_j-enr9X5r3_" target="_blank">Video 360 - Arqueología 3</a>
+        <a href="https://youtu.be/fQ3s3I6ihHE?si=HYlnTOn1VzlR9AH1" target="_blank">Video 360 - Arqueología 4</a>
+    </div>
+</div>
+
+<!-- SÍMBOLOS DECORATIVOS -->
+<div class="maya-left">𓂀</div>
+<div class="maya-right">𓆣</div>
+
+<!-- MÚSICA AMBIENTAL (selva) -->
+<audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+</body>
+</html>
